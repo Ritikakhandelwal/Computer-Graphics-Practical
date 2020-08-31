@@ -1,0 +1,25 @@
+#include<graphics.h>
+#include<stdlib.h>
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int graphdriver=DETECT,graphmode,errorcode;
+	int i;
+	int x1,y1,x,y,x_new,y_new;
+	printf("Enter the points : ");
+	printf("\n x1,y1 \t");
+	scanf("%d%d",&x1,&y1);
+	initgraph(&graphdriver,&graphmode,"C:\\TURBOC3\\BGI");
+	putpixel(x1,y1,7);
+	printf("enter the translation Co-ordinator \n");
+	printf("x,y \n");
+	scanf("%d%d",&x,&y);
+	x_new=x1+x;
+	y_new=y1+y;
+	printf("Point after trnslation");
+	putpixel(x_new,y_new,9);
+	getch();
+	closegraph();
+}
+	
