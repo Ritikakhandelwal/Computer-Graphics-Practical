@@ -1,0 +1,45 @@
+#include<graphics.h>
+
+#include<conio.h>
+
+#include<stdio.h>
+
+#include<dos.h>
+
+/*main()
+
+{
+
+   int gd = DETECT,gm,left=100,top=100,right=200,bottom=200,x= 300,y=150,radius=50;
+
+   initgraph(&gd, &gm, "C:\\TurboC3\\BGI");
+
+//Drawing rectangle
+
+   rectangle(left, top, right, bottom);
+
+//Drawing circle
+
+   circle(x, y, radius);
+
+//drawing a bar
+
+   bar(left + 300, top, right + 300, bottom);
+
+//Drawing a line
+
+   line(left - 10, top + 150, left + 410, top + 150);
+
+//Drawing eclipse
+
+   ellipse(x, y + 200, 0, 360, 100, 50);
+
+   outtextxy(left + 100, top + 325, "Basic shapes in graphics");
+
+   getch();
+
+   closegraph();
+
+   return 0;
+
+}
